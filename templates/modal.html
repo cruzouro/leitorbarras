@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Códigos de Barras</title>
+    <link rel="stylesheet" href="static/modal.css"> <!-- Mantendo o link para o CSS -->
+    <link rel="stylesheet" href="static/global.css"> <!-- Mantendo o link para o CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+</head>
+<body>
+<button id="exitButton" onclick="goBack()">Sair</button>
+<br>
+<h1>Busca preços</h1>
+<div id="interactive">
+    <div class="line"></div>
+    <div id="mask"></div> <!-- A máscara é sobreposta aqui -->
+</div>
+<div id="result"></div>
+
+<!-- Elemento para exibir a mensagem de status -->
+<div id="mensagem">Aguardando leitura...</div>
+
+<script src="static/modal.js"></script>
+
+</body>
+</html>

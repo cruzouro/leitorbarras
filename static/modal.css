@@ -1,0 +1,72 @@
+#interactive {
+width: 100%;
+height: 100px;
+position: relative;
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: rgba(0, 0, 0, 0.5); /* Máscara preta com 50% de opacidade */
+z-index: 1
+}
+video {
+width: 100%;
+height: auto;
+}
+#result {
+margin-top: 20px;
+font-size: 1.5em;
+color: green;
+}
+.line {
+position: absolute;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: red;
+animation: moveLine 2s linear infinite;
+}
+@keyframes moveLine {
+0% { top: -5%; }
+50% { top: 50%; }
+100% { top: 105%; }
+}
+#modal {
+display: block;
+position: relative;
+margin-top: 1px;
+background-color: rgba(0, 0, 0, 0.9);
+border: 1px solid #000000;
+padding: 20px;
+width: 80%;
+margin: 15px auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+}
+.modal-content {
+background-color: #000000;
+margin-top: 0%;
+padding: 20px;
+border: 1px solid #000000;
+width: 80%;
+position: relative;
+color: #ffffff;
+}
+.modal-content h2, 
+.modal-content p {
+color: #ffffff;
+}
+body {
+background-color: #000000;
+}
+h3 {
+color: #ffffff;
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Máscara preta com 50% de opacidade */
+    z-index: 3; /* Z-index para que a máscara fique acima da linha e mensagem */
+}

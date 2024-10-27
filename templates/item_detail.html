@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Item</title>
+    <link rel="stylesheet" href="../static/global.css">
+    <link rel="stylesheet" href="../static/item_detail.css">
+</head>
+  
+<body>
+<button id="exitButton" onclick="goBack()">Sair</button>
+<br>
+<h1>Detalhes do Item</h1>
+<p>Código: {{ item.codigo }}</p>
+<p>Descrição: {{ item.descricao }}</p>
+
+<div class="button-container">
+    <button onclick="goBack()" id="backButton" class="button">Inicio</button>
+    <button onclick="openRetry()" id="retryButton" class="button">Buscar</button>
+</div>
+<script src="../static/item_detail.js"></script>
+</body>
+</html>
